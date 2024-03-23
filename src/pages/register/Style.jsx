@@ -5,5 +5,4 @@ export const ImageStyle = styled.image`
 display: flex;
 justify-content: center;
 align-items: center;
-margin: -7px;
 `
