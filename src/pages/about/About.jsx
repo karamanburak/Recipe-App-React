@@ -6,7 +6,7 @@ const About = () => {
     return (
         <HomeStyle>
                 <ImageCodingStyle src={CodingSvg} alt="" />
-                <h1>ABOUT SOFTWARE DEVELOPER <span className='text-danger'>BURAK KARAMAN</span></h1>
+                <h1 className='text-center'>ABOUT SOFTWARE DEVELOPER <span className='text-danger'>BURAK KARAMAN</span></h1>
             <AboutStyle>
                 <h2>HI, I'AM BURAK</h2>
                 <h4>I'm currently learning Full-Stack Development Languages.
