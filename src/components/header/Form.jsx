@@ -29,7 +29,7 @@ const Form = () => {
                 </div>
             </FormStyle>
             <ImageStyle>
-                <img src={homeLogo} alt="" />
+                <img src={homeLogo} alt="" style={{height:"610px"}}/>
             </ImageStyle>
         </article>
 

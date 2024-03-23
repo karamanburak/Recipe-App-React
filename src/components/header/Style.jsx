@@ -7,6 +7,7 @@ font-size: 2rem;
 font-weight: bold;
 padding: 1rem;
 font-family: cursive;
+color: indianred;
 `;
 
 export const FormStyle = styled.div`
@@ -51,6 +52,7 @@ export const ImageStyle = styled.image`
 display: block;
 text-align: center;
 margin-top: 2rem;
+
 
 `
 

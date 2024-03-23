@@ -13,13 +13,15 @@ const AppRouter = () => {
             <MyNavbar />
             <Routes>
                 <Route exact path='/' element={<Home />} />
+                <Route path='/register' element={<Register />} />
 
                 <Route path='/about' element={<PrivateRouter />}>
-                    <Route path='' element={<About />} />
+                    <Route path="" element={<About />} />
                 </Route>
 
-                <Route path='/register' element={<Register />} />
-                <Route path='/register' element={<Login />} />
+                <Route path='/login' element={<PrivateRouter />}>
+                <Route path='' element={<Login />} />
+                </Route>
 
             </Routes>
         </Router>

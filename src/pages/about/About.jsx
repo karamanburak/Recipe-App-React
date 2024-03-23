@@ -1,8 +1,11 @@
 import React from 'react'
+import Login from '../login/Login'
 
 const About = () => {
     return (
-        <div>About</div>
+        <div>
+            {/* <Login/> */}
+        </div>
     )
 }
 
