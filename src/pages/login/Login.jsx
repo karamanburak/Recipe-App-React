@@ -1,5 +1,5 @@
 import React from 'react'
-import FormContainerStyle, { ImageMealStyle, InputContainerStyle, LoginContainerStyle } from './Style'
+import FormContainerStyle, { ButtonStyle, ImageMealStyle, InputContainerStyle, LoginContainerStyle } from './Style'
 import mealLogo from '../../assets/meal.svg'
 import { useNavigate } from 'react-router-dom/dist'
 
@@ -29,9 +29,9 @@ const Login = () => {
           />
         </div>
         <div>
-          <button 
+          <ButtonStyle 
           onClick={()=>navigate("/")}
-           type="submit">LOGIN</button>
+           type="submit">LOGIN</ButtonStyle>
         </div>
         </InputContainerStyle>
       </LoginContainerStyle>

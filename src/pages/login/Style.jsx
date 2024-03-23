@@ -39,5 +39,18 @@ font-size: 1.5rem;
 
 `
 
+export const ButtonStyle = styled.button`
+width: 280px;
+border: none;
+outline: none;
+background-color: #66BDC1;
+
+&:hover{
+    opacity: .8;
+    transition: all ease-in-out .3s;
+}
+
+`
+
 
 export default FormContainerStyle;
