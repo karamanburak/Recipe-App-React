@@ -11,7 +11,7 @@ const About = () => {
                 <h2>HI, I'AM BURAK</h2>
                 <h4>I'm currently learning Full-Stack Development Languages.
                     I've already known JS, ReactJS, ReactNative, NodeJS, MongoDB,SQL, AWS Services.</h4>
-                <p style={{ fontWeight: "bold" }}><a href='mailto:karaman.buraak@gmail.com' target='blank'   className='text-white'>Send email :</a>  karaman.buraak@gmail.com</p>
+                <p style={{ fontWeight: "bold" }}><a href='mailto:karaman.buraak@gmail.com' target='blank' className='text-white'>Send email :</a> karaman.buraak@gmail.com</p>
             </AboutStyle>
         </HomeStyle>
     )

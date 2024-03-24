@@ -1,8 +1,9 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import mainLogo from '../../assets/main-logo.png'
 import { Navbar } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import NavbarStyled, { NavLinkStyle, NavStyle, TitleStyle } from './Style';
+import NavbarStyled, { ImgStyle, NavLinkStyle, NavStyle, TitleStyle } from './Style';
 
 const MyNavbar = () => {
     const navigate = useNavigate()
@@ -10,9 +11,7 @@ const MyNavbar = () => {
     return (
         <NavbarStyled>
             <Navbar expand="lg" backgroundColor>
-                <TitleStyle
-                    onClick={() => navigate("/")}
-                >RECIPE APP</TitleStyle>
+                <ImgStyle onClick={()=> navigate("/")} src={mainLogo} alt="" />
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <NavStyle className="ms-auto gap-3 fs-4">

@@ -10,8 +10,8 @@ width: 100%;
 padding: 2rem;
 `;
 
-export const TitleStyle = styled.div`
-font-size: 2rem;
+export const ImgStyle = styled.img`
+width:100px;
 `
 
 

@@ -48,9 +48,10 @@ font-family: cursive;
 border-radius: 5px;
 `
 
-export const ImageStyle = styled.image`
+export const ImageStyle = styled.img`
 display: block;
-text-align: center;
+text-align: center; 
+margin: auto;
 margin-top: 2rem;
 
 

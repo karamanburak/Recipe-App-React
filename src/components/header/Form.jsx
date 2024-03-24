@@ -1,19 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ButtonStyle, FormStyle, ImageStyle, InputStyle, SelectStyle } from './Style'
 import homeLogo from '../../assets/home.svg'
+import RecipeCard from '../../pages/home/RecipeCard'
 const Form = () => {
+    const [showCard,setShowCard] = useState(true)
+    const [inputChange, setInputChange] = useState("")
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
     return (
         <article >
-            <FormStyle className="p-2">
+            <FormStyle onSubmit={handleSubmit} className="p-2">
                 <div className="mx-3">
                     <InputStyle
                         type="text"
                         name="name"
                         placeholder='Search for a recipe '
+                        onChange={(e)=>setInputChange(e.target.value)}
                     />
                 </div>
                 <div className="text-center">
-                    <ButtonStyle type="submit">
+                    <ButtonStyle onClick={()=>setShowCard(false)} type="submit">
                         SEARCH
                     </ButtonStyle>
                 </div>
@@ -28,9 +35,9 @@ const Form = () => {
                     </SelectStyle>
                 </div>
             </FormStyle>
-            <ImageStyle>
-                <img src={homeLogo} alt="" style={{height:"610px"}}/>
-            </ImageStyle>
+            {showCard && ( <ImageStyle src={homeLogo} alt="" style={{height:"610px"}}/>) }
+            {!showCard && (<RecipeCard/>)}
+           
         </article>
 
     )
