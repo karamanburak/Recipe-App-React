@@ -12,10 +12,10 @@ const RecipeCard = () => {
     return (
         <CardContainerStyle className='mt-4'>
             {recipeData.map((item)=>(
-                    <CardBodyStyle>
+                <CardBodyStyle key={item.recipe.totalWeight}>
                         <Card.Title>{item.recipe.label}</Card.Title>
                         <Card.Img variant="top" src={item.recipe.image} style={{ width: '12rem' }} />
-                        <Button onClick={()=> navigate("/details")} variant="warning">View Recipe</Button>
+                        <Button onClick={()=> navigate("/details", {state: {item}})} variant="warning">View Recipe</Button>
                     </CardBodyStyle>
             ))}
         </CardContainerStyle>
