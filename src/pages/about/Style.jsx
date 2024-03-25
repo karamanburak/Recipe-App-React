@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HomeStyle = styled.div`
 width: 100%;
-height: 90vh;
+height: 100vh;
 padding: .5rem;
 gap:.5rem;
 border: 2px solid #fff;
@@ -28,7 +28,6 @@ height: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -4rem;
 `
 
 export const AboutStyle = styled.div`
