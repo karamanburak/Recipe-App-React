@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HomeStyle = styled.div`
 width: 100%;
-/* height: 100vh; */
+min-height: 100vh;
 padding: .5rem;
 gap:.5rem;
 border: 2px solid #fff;
@@ -34,7 +34,7 @@ align-items: center;
 gap: 1rem;
 margin: 1rem 0;
 text-transform: uppercase;
-background-color: indianred;
+background-color: #E1F1DD;
 width: 300px;
 height: 350px;
 border-radius: 10px;
