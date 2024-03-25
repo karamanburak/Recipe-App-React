@@ -39,6 +39,10 @@ font-size: 1.5rem;
 
 `
 
+export const InputStyle = styled.input`
+outline: none;
+`
+
 export const ButtonStyle = styled.button`
 width: 280px;
 border: none;
