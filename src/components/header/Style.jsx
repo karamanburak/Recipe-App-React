@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 const HeaderStyle = styled.div`
 display: block;
 text-align: center;
@@ -55,6 +56,13 @@ margin: auto;
 margin-top: 2rem;
 
 
+`
+
+export const H1Style = styled.h1`
+font-family: "Rubik Scribble", system-ui;
+color: indianred;
+font-weight: bold;
+font-size: 3rem;
 `
 
 export default HeaderStyle;
