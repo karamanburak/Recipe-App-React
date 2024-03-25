@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { useLocation } from 'react-router-dom'
-import { RecipeContext } from '../../App'
 import ContainerStyle, { DetailMealImgStyle, DetailsCardImg, DetailsCardStyle, HeaderContainerStyle } from './Style'
 import DietLogo from '../../assets/diet.svg'
+import { RecipeContext } from '../../context/RecipeProvider'
 
 const Details = () => {
     const {recipeData} = useContext(RecipeContext)

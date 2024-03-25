@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { ButtonStyle, FormStyle, ImageStyle, InputStyle, SelectStyle } from './Style'
 import homeLogo from '../../assets/home.svg'
 import RecipeCard from '../../pages/home/RecipeCard'
-import { RecipeContext } from '../../App'
+import { RecipeContext } from '../../context/RecipeProvider'
 const Form = () => {
     const { recipeData, query, setQuery, meal, setMeal } = useContext(RecipeContext)
 

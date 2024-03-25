@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { Navigate, Outlet } from 'react-router-dom'
-import { RecipeContext } from '../App'
+import { RecipeContext } from '../context/RecipeProvider';
+
 
 const PrivateRouter = () => {
-
     const {name,password} = useContext(RecipeContext)
 
     return (name === "burak" && password === "1234" ? (

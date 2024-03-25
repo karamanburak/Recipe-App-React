@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import FormContainerStyle, { ButtonStyle, ImageMealStyle, InputContainerStyle, InputStyle, LoginContainerStyle } from './Style'
 import mealLogo from '../../assets/meal.svg'
 import { useNavigate } from 'react-router-dom/dist'
-import { RecipeContext } from '../../App'
+import { RecipeContext } from '../../context/RecipeProvider'
 
 const Login = () => {
   const {name,setName,password,setPassword} = useContext(RecipeContext)

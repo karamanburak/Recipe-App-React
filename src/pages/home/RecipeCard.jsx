@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
-import { RecipeContext } from '../../App';
 import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom/dist';
 import { CardBodyStyle, CardContainerStyle } from './Style';
+import { RecipeContext } from '../../context/RecipeProvider';
 
 const RecipeCard = () => {
     //! 3- GET DATA\\
