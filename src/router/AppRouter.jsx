@@ -15,14 +15,16 @@ const AppRouter = () => {
             <Routes>
                 <Route exact path='/' element={<Home />} />
                 <Route path='/register' element={<Register />} />
-                <Route path='/details' element={<Details />} />
+                
+                <Route path='/login' element={<Login />} />
+
 
                 <Route path='/about' element={<PrivateRouter />}>
                     <Route path="" element={<About />} />
                 </Route>
 
-                <Route path='/login' element={<PrivateRouter />}>
-                <Route path='' element={<Login />} />
+                <Route path='/details' element={<PrivateRouter />}>
+                    <Route path='' element={<Details />} />
                 </Route>
 
 

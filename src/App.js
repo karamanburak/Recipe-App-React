@@ -10,6 +10,8 @@ const App = () => {
   const [recipeData,setRecipeData] = useState([])
   const [meal,setMeal] = useState([])
   const [query,setQuery] = useState([])
+  const [name,setName] = useState(localStorage.getItem("username") ||"")
+  const [password,setPassword] = useState(localStorage.getItem("password") ||"")
   const API_KEY = "ad3262b3de24c620c50d76dc1545a670"
   const API_ID = "e5dc6ef1"
   // const BASE_URL = `https://api.edamam.com/search?q=${query}&app_id=${API_ID}&app_key=${API_KEY}&mealType=${meal}`
@@ -31,8 +33,9 @@ getData()
   },[])
 
 
+
   return (
-    <RecipeContext.Provider value={{recipeData}}>
+    <RecipeContext.Provider value={{ recipeData, query, setQuery, meal, setMeal,name,setName,password,setPassword }}>
       <AppRouter />
     </RecipeContext.Provider>
 

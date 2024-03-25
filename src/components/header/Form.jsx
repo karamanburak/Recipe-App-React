@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { ButtonStyle, FormStyle, ImageStyle, InputStyle, SelectStyle } from './Style'
 import homeLogo from '../../assets/home.svg'
 import RecipeCard from '../../pages/home/RecipeCard'
+import { RecipeContext } from '../../App'
 const Form = () => {
+    const { recipeData, query, setQuery, meal, setMeal } = useContext(RecipeContext)
+
     const [showCard,setShowCard] = useState(true)
-    const [inputChange, setInputChange] = useState("")
     const handleSubmit = (e) => {
         e.preventDefault()
     }
@@ -15,8 +17,7 @@ const Form = () => {
                     <InputStyle
                         type="text"
                         name="name"
-                        placeholder='Search for a recipe '
-                        onChange={(e)=>setInputChange(e.target.value)}
+                        placeholder='Search for a recipe'
                     />
                 </div>
                 <div className="text-center">

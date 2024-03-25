@@ -1,36 +1,47 @@
-import React from 'react'
-import FormContainerStyle, { ButtonStyle, ImageMealStyle, InputContainerStyle, LoginContainerStyle } from './Style'
+import React, { useContext, useState } from 'react'
+import FormContainerStyle, { ButtonStyle, ImageMealStyle, InputContainerStyle, InputStyle, LoginContainerStyle } from './Style'
 import mealLogo from '../../assets/meal.svg'
 import { useNavigate } from 'react-router-dom/dist'
+import { RecipeContext } from '../../App'
 
 const Login = () => {
+  const {name,setName,password,setPassword} = useContext(RecipeContext)
   const navigate = useNavigate()
+
+const handleSubmit = (e) =>{
+e.preventDefault()
+localStorage.setItem("username",name)
+localStorage.setItem("password",password)
+navigate("/")
+
+}
+
   return (
-    <FormContainerStyle>
+    <FormContainerStyle onSubmit={handleSubmit}>
       <LoginContainerStyle >
         <InputContainerStyle>
         <ImageMealStyle src={mealLogo} alt="" />
         <div className="mb-3">
-          <input
+            <InputStyle
             type="text"
             name="name"
             placeholder='USERNAME'
-            // value={""}
             required
+            onChange={(e)=>setName(e.target.value)}
           />
         </div>
         <div className="mb-3">
-          <input
+            <InputStyle
             type="password"
             name="password"
             placeholder='PASSWORD'
-            // value={""}
             required
+              onChange={(e) => setPassword(e.target.value)}
+
           />
         </div>
         <div>
           <ButtonStyle 
-          onClick={()=>navigate("/")}
            type="submit">LOGIN</ButtonStyle>
         </div>
         </InputContainerStyle>
