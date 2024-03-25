@@ -17,7 +17,7 @@ width:100px;
 
 export const NavStyle = styled.div`
 display: flex;
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
     display:flex;
     flex-direction: column;
    text-align: center;
@@ -25,7 +25,7 @@ display: flex;
 
 `
 export const NavLinkStyle = styled(NavStyle)`
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
     display:flex;
     flex-direction: column;
    text-align: center;
