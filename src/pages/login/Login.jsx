@@ -12,7 +12,7 @@ const handleSubmit = (e) =>{
 e.preventDefault()
 localStorage.setItem("username",name)
 localStorage.setItem("password",password)
-navigate("/")
+navigate(-1)
 
 }
 
