@@ -1,4 +1,4 @@
-import ContainerStyle, { DetailMealImgStyle, DetailsCardImg, DetailsCardStyle, HeaderContainerStyle } from './Style'
+import ContainerStyle, { DetailMealImgStyle, DetailsCardImg, DetailsCardStyle, H1Style, HeaderContainerStyle } from './Style'
 import DietLogo from '../../assets/diet.svg'
 import { useLocation } from 'react-router-dom';
 
@@ -10,10 +10,12 @@ const Details = () => {
 
             <ContainerStyle>
             <HeaderContainerStyle>
-            <h1>{item.recipe.label}</h1>
+            <H1Style>{item.recipe.label}</H1Style>
                 <DetailMealImgStyle src={DietLogo} />
             </HeaderContainerStyle>
             <DetailsCardStyle>
+            <div>
+
                 <p>
                     {item.recipe.totalNutrients.CA.label}:
                     {Math.round(item.recipe.totalNutrients.CA.quantity)}
@@ -36,7 +38,13 @@ const Details = () => {
                 </p>
                 <p>{item.recipe.totalWeight} </p>
                 <p>Calories:{Math.round(item.recipe.calories)} </p>
-                    <DetailsCardImg src={item.recipe.image} alt="" />
+            </div>
+            <div>
+              <DetailsCardImg src={item.recipe.image} alt="" />
+            </div>
+                
+            <div>
+
                 <p>
                     {item.recipe.digest.slice(0, 4).map((item, index) => (
                         <p key={index}>
@@ -44,6 +52,7 @@ const Details = () => {
                         </p>
                     ))}
                 </p>
+            </div>
             </DetailsCardStyle>
             </ContainerStyle>
     )
