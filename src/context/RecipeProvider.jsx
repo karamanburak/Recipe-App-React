@@ -1,5 +1,6 @@
 import axios from "axios";
-import React, { createContext, useEffect, useState } from 'react'
+import React, { createContext, useState } from 'react'
+import { H1Style } from "../pages/details/Style";
 
 export const RecipeContext = createContext()
 
@@ -32,10 +33,9 @@ const RecipeProvider = ({children}) => {
         }
     }
     if (error) {
-        return <p>Something went wrong.....</p>;
+        return <H1Style>Something went wrong.....</H1Style>;
     }
-    if (loading) { return <p>loading...</p> }
-
+    if (loading) { return <H1Style>Loading...</H1Style> }
     return (
         <RecipeContext.Provider 
         value={{
