@@ -1,5 +1,7 @@
 # Recipe-App-React
-A multi-page web application with recipes for different dishes
+  <div style="text-align:center;">
+    <img src="https://i.imgur.com/waxVImv.png" alt="Colorful Stick">
+</div>
 
 
 ## Demo
