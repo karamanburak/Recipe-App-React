@@ -6,7 +6,7 @@ import { RecipeContext } from '../context/RecipeProvider';
 const PrivateRouter = () => {
     const {name,password} = useContext(RecipeContext)
 
-    return (name === "burak" && password === "1234" ? (
+    return (name === "name" && password === "1234" ? (
         <Outlet />
     ) : (
         <Navigate to="/login" />
