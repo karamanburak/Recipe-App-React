@@ -6,6 +6,7 @@
 
 ## Demo
 
+
 ## Project Skeleton
 
 ```
@@ -63,7 +64,7 @@ SOLUTION
 
 ## Expected Outcome
 
-<!-- ![Project Snapshot]() -->
+![Project Snapshot](./src/assets/recipe-app.gif)
 
 
 ### At the end of the project, following topics are to be covered;
