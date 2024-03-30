@@ -7,6 +7,7 @@ import Register from '../pages/register/Register'
 import Login from '../pages/login/Login'
 import MyNavbar from '../components/navbar/Navbar'
 import Details from '../pages/details/Details'
+import NotFound from '../pages/errorPage/NotFound'
 
 const AppRouter = () => {
     return (
@@ -26,7 +27,7 @@ const AppRouter = () => {
                 <Route path='/details' element={<PrivateRouter />}>
                     <Route path='' element={<Details />} />
                 </Route>
-
+                <Route path="*" element={<NotFound />} />
 
             </Routes>
         </Router>

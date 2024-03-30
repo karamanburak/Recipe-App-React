@@ -6,8 +6,10 @@ export const RecipeContext = createContext()
 
 const RecipeProvider = ({children}) => {
     const [recipeData, setRecipeData] = useState([])
-    const [meal, setMeal] = useState([])
-    const [query, setQuery] = useState([])
+    const [meal, setMeal] = useState("Breakfast")
+    const [query, setQuery] = useState("")
+    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState(false)
     const [name, setName] = useState(localStorage.getItem("username") || "")
     const [password, setPassword] = useState(localStorage.getItem("password") || "")
 
@@ -17,23 +19,35 @@ const RecipeProvider = ({children}) => {
 
 
     const getData = async () => {
+        setLoading(true)
         try {
             const { data } = await axios.get(BASE_URL)
-            console.log(data.hits);
+            // console.log(data.hits);
             setRecipeData(data.hits)
 
         } catch (error) {
-            console.log(error);
+            setError(true);
+        }finally{
+            setLoading(false)
         }
     }
-
-    useEffect(() => {
-        getData()
-    }, [])
-
+    if (error) {
+        return <p>Something went wrong.....</p>;
+    }
+    if (loading) { return <p>loading...</p> }
 
     return (
-        <RecipeContext.Provider value={{recipeData,meal,setMeal,query,setQuery,name,setName,password,setPassword}}>
+        <RecipeContext.Provider 
+        value={{
+            recipeData,
+            setMeal,
+            setQuery,
+            name,
+            setName,
+            password,
+            setPassword,
+            getData
+            }}>
             {children}
         </RecipeContext.Provider>
     )

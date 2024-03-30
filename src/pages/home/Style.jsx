@@ -34,6 +34,7 @@ align-items: center;
 gap: 1rem;
 margin: 1rem 0;
 text-transform: uppercase;
+text-align: center;
 background-color: #E1F1DD;
 width: 300px;
 height: 350px;
