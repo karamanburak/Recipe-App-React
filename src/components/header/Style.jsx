@@ -11,7 +11,7 @@ font-family: cursive;
 color: indianred;
 `;
 
-export const FormStyle = styled.div`
+export const FormStyle = styled.form`
 display: flex;
 /* justify-content: center; */
 align-items: center;
