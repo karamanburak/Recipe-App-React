@@ -1,6 +1,7 @@
 # Recipe-App-React
 A multi-page web application with recipes for different dishes
 
+
 ## Demo
 
 ## Project Skeleton
@@ -95,6 +96,7 @@ SOLUTION
 
 
 ## Notes
+- The user must enter username: "name" password: "1234" in order to login page or access the details page.
 
 - You can add additional functionalities to your app.
 
