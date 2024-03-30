@@ -28,7 +28,7 @@ color: #E1F1DD;
 `
 
 export const DetailsCardStyle = styled.div`
-display: flex;
+/* display: flex; */
 justify-content: center;
 align-items: center;
 text-transform: uppercase;
