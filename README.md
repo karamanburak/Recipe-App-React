@@ -60,7 +60,7 @@ SOLUTION
 
 ## Expected Outcome
 
-![Project Snapshot]()
+<!-- ![Project Snapshot]() -->
 
 
 ### At the end of the project, following topics are to be covered;
@@ -98,4 +98,4 @@ SOLUTION
 
 - You can add additional functionalities to your app.
 
-- [Assets Folder](./assets/)
+- [Assets Folder](./src/assets/)
