@@ -36,7 +36,7 @@ const Details = () => {
                 </p>
                 <p>{item.recipe.totalWeight} </p>
                 <p>Calories:{Math.round(item.recipe.calories)} </p>
-          
+                    <DetailsCardImg src={item.recipe.image} alt="" />
                 <p>
                     {item.recipe.digest.slice(0, 4).map((item, index) => (
                         <p key={index}>
