@@ -5,7 +5,7 @@
 
 
 ## Demo
-
+  <a href="https://recipe-app-gamma-livid.vercel.app/" target="_blank">Recipe App</a>
 
 ## Project Skeleton
 
