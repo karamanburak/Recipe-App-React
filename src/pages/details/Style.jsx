@@ -24,7 +24,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-transform: uppercase;
-font-family: cursive;
 color: #E1F1DD;
 `
 
@@ -34,7 +33,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-transform: uppercase;
-font-family: cursive;
 background-color: #E1F1DD;
 width: 80vw;
 margin: auto;
