@@ -97,7 +97,6 @@ SOLUTION
 
 - Step 6: You can get random login background image from `https://picsum.photos/1600/900`
 
-
 ## Notes
 - The user must enter username: "name" password: "1234" in order to login page or access the details page.
 
