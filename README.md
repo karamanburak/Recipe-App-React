@@ -3,9 +3,13 @@
     <img src="https://i.imgur.com/waxVImv.png" alt="Colorful Stick">
 </div>
 
-
 ## Demo
   <a href="https://recipe-app-gamma-livid.vercel.app/" target="_blank">Recipe App</a>
+
+  ## Description
+  
+This project is a simple recipe project. The project is developed with react. The aim of the project is to access the recipe by searching for the desired dish and the desired meal time. You need to be logged in to access the recipe. 
+ `The user must enter username: "name" password: "1234" to access the login page or details page: "1234".`
 
 ## Project Skeleton
 
@@ -62,26 +66,10 @@ SOLUTION
 └── yarn.lock
 ```
 
-## Expected Outcome
+## Outcome
 
 ![Project Snapshot](./src/assets/recipe-app.gif)
 
-
-### At the end of the project, following topics are to be covered;
-
-- HTML
-
-- CSS
-
-- JS
-
-- ReactJS
-
-### At the end of the project, you will be able to;
-
-- improve coding skills within HTML & CSS & JS & ReactJS.
-
-- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
 ## Steps to Solution
 
@@ -98,8 +86,5 @@ SOLUTION
 - Step 6: You can get random login background image from `https://picsum.photos/1600/900`
 
 ## Notes
-- The user must enter username: "name" password: "1234" in order to login page or access the details page.
-
-- You can add additional functionalities to your app.
 
 - [Assets Folder](./src/assets/)
