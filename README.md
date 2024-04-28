@@ -1,9 +1,7 @@
 # recipe-app
-  <div style="text-align:center;">
-</div>
 
-## Demo
-  <a href="https://recipy.vercel.app/" target="_blank">Recipe App</a>
+ [Recipe App Live](https://recipy.vercel.app/)
+
 
   ## Description
   
