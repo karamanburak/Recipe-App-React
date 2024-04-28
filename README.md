@@ -1,10 +1,9 @@
 # recipe-app
   <div style="text-align:center;">
-    <img src="https://i.imgur.com/waxVImv.png" alt="Colorful Stick">
 </div>
 
 ## Demo
-  <a href="https://recipe-app-gamma-livid.vercel.app/" target="_blank">Recipe App</a>
+  <a href="https://recipy.vercel.app/" target="_blank">Recipe App</a>
 
   ## Description
   
